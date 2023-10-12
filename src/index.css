@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #07071c;
+  color: white;
+}
+
+.slide-container {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5%;
+    z-index: 10;
+    background: linear-gradient(to right, #07071c 0%, rgba(7, 7, 28, 0) 30%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 5%;
+    z-index: 10;
+    background: linear-gradient(to left, #07071c 0%, rgba(7, 7, 28, 0) 30%);
+  }
+}
+
+select {
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
