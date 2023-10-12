@@ -57,10 +57,10 @@ export default function Search() {
 
   return (
     <div className="w-11/12 mx-auto flex flex-col items-center justify-center mt-20">
-      <h2 className="text-4xl font-medium tracking-widest">
+      <h2 className="text-4xl font-medium tracking-widest text-center">
         Explore the Crypto
       </h2>
-      <div className="relative w-[40%]">
+      <div className="relative w-[40%] max-[720px]:w-[80%]">
         <div className="flex w-full gap-5 mt-5 items-center px-5 py-3 rounded-[30px] border-[1.5px] border-secondaryText">
           <HiOutlineSearch />{" "}
           <input
